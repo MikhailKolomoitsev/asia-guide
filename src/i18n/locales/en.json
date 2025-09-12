@@ -1,0 +1,84 @@
+{
+  "navigation": {
+    "home": "Home",
+    "thailand": "Thailand",
+    "vietnam": "Vietnam",
+    "bali": "Bali",
+    "kualaLumpur": "Kuala Lumpur",
+    "language": "Language"
+  },
+  "home": {
+    "title": "Living in South-Eastern Asia Guide",
+    "subtitle": "Your comprehensive guide to living in Thailand, Vietnam, Bali, and Kuala Lumpur",
+    "description": "Discover everything you need to know about relocating and living in the most popular destinations in South-Eastern Asia.",
+    "getStarted": "Get Started"
+  },
+  "thailand": {
+    "title": "Living in Thailand",
+    "sections": {
+      "visa": "Visa Requirements",
+      "housing": "Housing & Accommodation",
+      "cost": "Cost of Living",
+      "healthcare": "Healthcare",
+      "culture": "Culture & Lifestyle"
+    },
+    "content": {
+      "visa": "Thailand offers various visa options including Tourist Visa, Non-Immigrant Visa, and Elite Visa. For long-term stays, consider the Smart Visa or retirement visa.",
+      "housing": "Housing options range from modern condos in Bangkok to beachfront villas in Phuket. Rental prices vary significantly by location.",
+      "cost": "Thailand offers excellent value for money. Monthly expenses can range from $800-2000 depending on lifestyle and location.",
+      "healthcare": "Thailand has excellent healthcare facilities, especially in Bangkok and major tourist areas. Consider international health insurance.",
+      "culture": "Thai culture emphasizes respect, Buddhism, and family values. Learning basic Thai phrases will be greatly appreciated."
+    }
+  },
+  "vietnam": {
+    "title": "Living in Vietnam",
+    "sections": {
+      "visa": "Visa Requirements",
+      "housing": "Housing & Accommodation",
+      "cost": "Cost of Living",
+      "healthcare": "Healthcare",
+      "culture": "Culture & Lifestyle"
+    },
+    "content": {
+      "visa": "Vietnam offers tourist visas, work permits, and temporary residence cards. Consider the new digital nomad visa for remote workers.",
+      "housing": "From modern apartments in Ho Chi Minh City to traditional houses in Hanoi. Serviced apartments are popular among expats.",
+      "cost": "Vietnam is very affordable with monthly expenses ranging from $500-1500. Food and transportation are particularly inexpensive.",
+      "healthcare": "Healthcare quality varies by region. International hospitals are available in major cities like HCMC and Hanoi.",
+      "culture": "Vietnamese culture values family, education, and hard work. Learning Vietnamese basics will help with daily interactions."
+    }
+  },
+  "bali": {
+    "title": "Living in Bali, Indonesia",
+    "sections": {
+      "visa": "Visa Requirements",
+      "housing": "Housing & Accommodation",
+      "cost": "Cost of Living",
+      "healthcare": "Healthcare",
+      "culture": "Culture & Lifestyle"
+    },
+    "content": {
+      "visa": "Indonesia offers B211 Visit Visa, B213 Business Visa, and the new B213A Digital Nomad Visa. Visa runs to Singapore are common.",
+      "housing": "From beachfront villas in Canggu to rice field views in Ubud. Many expats prefer monthly villa rentals.",
+      "cost": "Bali can be very affordable or expensive depending on lifestyle. Budget $600-2500 per month depending on accommodation and dining choices.",
+      "healthcare": "Private healthcare is recommended. BIMC and Siloam hospitals offer international standards in major areas.",
+      "culture": "Balinese Hindu culture emphasizes harmony, community, and spirituality. Respect local customs and dress codes at temples."
+    }
+  },
+  "kualaLumpur": {
+    "title": "Living in Kuala Lumpur, Malaysia",
+    "sections": {
+      "visa": "Visa Requirements",
+      "housing": "Housing & Accommodation",
+      "cost": "Cost of Living",
+      "healthcare": "Healthcare",
+      "culture": "Culture & Lifestyle"
+    },
+    "content": {
+      "visa": "Malaysia offers MM2H program, work visas, and student visas. The new DE Rantau Nomad Pass is available for digital nomads.",
+      "housing": "Modern condos and serviced apartments are popular. KLCC, Mont Kiara, and Bangsar are expat-friendly areas.",
+      "cost": "KL offers great value with monthly expenses ranging from $700-2000. Public transportation and local food are very affordable.",
+      "healthcare": "Malaysia has excellent healthcare with many internationally accredited hospitals. Medical tourism is popular.",
+      "culture": "Multi-cultural society with Malay, Chinese, and Indian influences. English is widely spoken in business and urban areas."
+    }
+  }
+}
