@@ -240,6 +240,51 @@ body {
   margin-bottom: 20px;
 }
 
+.location-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.location-tab {
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 25px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1em;
+  font-weight: 500;
+  color: #666;
+}
+
+.location-tab:hover {
+  border-color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+}
+
+.location-tab.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: #667eea;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.location-icon {
+  font-size: 1.2em;
+}
+
+.location-name {
+  font-weight: 600;
+}
+
 .sections-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -321,6 +366,16 @@ body {
 
   .section-card {
     padding: 20px;
+  }
+
+  .location-tabs {
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .location-tab {
+    padding: 10px 16px;
+    font-size: 0.9em;
   }
 }
 

@@ -15,6 +15,13 @@
   },
   "thailand": {
     "title": "Living in Thailand",
+    "locations": {
+      "general": "General Info",
+      "islands": "Islands (Koh Samui/Koh Phangan)",
+      "phuket": "Phuket",
+      "bangkok": "Bangkok",
+      "chiangmai": "Chiang Mai"
+    },
     "sections": {
       "visa": "Visa Requirements",
       "housing": "Housing & Accommodation",
@@ -23,11 +30,41 @@
       "culture": "Culture & Lifestyle"
     },
     "content": {
-      "visa": "Thailand offers various visa options including Tourist Visa, Non-Immigrant Visa, and Elite Visa. For long-term stays, consider the Smart Visa or retirement visa.",
-      "housing": "Housing options range from modern condos in Bangkok to beachfront villas in Phuket. Rental prices vary significantly by location.",
-      "cost": "Thailand offers excellent value for money. Monthly expenses can range from $800-2000 depending on lifestyle and location.",
-      "healthcare": "Thailand has excellent healthcare facilities, especially in Bangkok and major tourist areas. Consider international health insurance.",
-      "culture": "Thai culture emphasizes respect, Buddhism, and family values. Learning basic Thai phrases will be greatly appreciated."
+      "general": {
+        "visa": "Thailand offers various visa options including Tourist Visa, Non-Immigrant Visa, and Elite Visa. For long-term stays, consider the Smart Visa or retirement visa.",
+        "housing": "Housing options range from modern condos in Bangkok to beachfront villas in Phuket. Rental prices vary significantly by location.",
+        "cost": "Thailand offers excellent value for money. Monthly expenses can range from $800-2000 depending on lifestyle and location.",
+        "healthcare": "Thailand has excellent healthcare facilities, especially in Bangkok and major tourist areas. Consider international health insurance.",
+        "culture": "Thai culture emphasizes respect, Buddhism, and family values. Learning basic Thai phrases will be greatly appreciated."
+      },
+      "islands": {
+        "visa": "Same visa requirements apply across Thailand. Tourist visas allow 30-60 days, extendable. For longer stays on the islands, consider ED visas or Elite visas.",
+        "housing": "Island accommodation ranges from beach bungalows to luxury villas. Koh Samui offers more upscale options, while Koh Phangan has budget-friendly choices. Monthly rentals: $300-1500.",
+        "cost": "Island living costs vary greatly. Koh Samui is more expensive ($1000-2500/month), while Koh Phangan offers budget options ($600-1500/month). Food and transport costs are higher than mainland.",
+        "healthcare": "Koh Samui has several private hospitals including Bangkok Hospital Samui. Koh Phangan has basic medical facilities. Serious cases may require mainland treatment.",
+        "culture": "Island culture is relaxed and tourism-focused. Full Moon Parties on Koh Phangan attract international crowds. Respect local Buddhist customs and marine environment."
+      },
+      "phuket": {
+        "visa": "Phuket follows standard Thai visa rules. Many expats use tourist visas with border runs to Malaysia. Elite Visa popular for long-term residents.",
+        "housing": "From beachfront condos in Patong to hillside villas in Kata. Popular expat areas: Rawai, Nai Harn, Kamala. Monthly rent: $500-3000 depending on location and luxury level.",
+        "cost": "Phuket is Thailand's most expensive province. Budget $1200-3000/month. Western food, alcohol, and accommodation are pricier. Local markets offer affordable options.",
+        "healthcare": "Excellent healthcare with Bangkok Hospital Phuket, Phuket International Hospital. Medical tourism popular. Comprehensive facilities for emergencies and routine care.",
+        "culture": "Mix of Thai-Buddhist culture with international beach lifestyle. Tourist areas are cosmopolitan. Respect local customs, especially during religious festivals."
+      },
+      "bangkok": {
+        "visa": "Bangkok is the hub for visa processing. Immigration office at Chaeng Watthana handles extensions. Many visa agencies available. Easy access to embassies for visa runs.",
+        "housing": "Huge variety from budget hostels to luxury condos. Popular expat areas: Sukhumvit, Silom, Thonglor, Ari. BTS/MRT access important. Monthly rent: $300-2000.",
+        "cost": "Very affordable major city. Budget $800-2000/month. Street food from $1-3, local transport cheap. Western lifestyle costs more but still reasonable compared to Western cities.",
+        "healthcare": "World-class healthcare including Bumrungrad, Bangkok Hospital, Samitivej. Medical tourism destination. Excellent facilities for all medical needs.",
+        "culture": "Urban Thai culture with strong Buddhist influence. Respect for monarchy important. Mix of traditional and modern. Learning Thai helpful for deeper integration."
+      },
+      "chiangmai": {
+        "visa": "Chiang Mai immigration office handles visa extensions. Popular with digital nomads using tourist visas and ED visas. Visa runs to Myanmar or Laos common.",
+        "housing": "Affordable options from traditional Thai houses to modern condos. Popular areas: Nimman, Old City, Hang Dong. Monthly rent: $200-1000, great value for money.",
+        "cost": "Very affordable living. Budget $600-1500/month for comfortable lifestyle. Excellent local food scene, affordable transportation, and lower accommodation costs.",
+        "healthcare": "Good healthcare with Chiang Mai Ram, McCormick Hospital. Lower costs than Bangkok. Adequate for most needs, complex cases may require Bangkok treatment.",
+        "culture": "Northern Thai (Lanna) culture distinct from Bangkok. More relaxed pace, strong arts scene, mountain lifestyle. Digital nomad community, co-working spaces abundant."
+      }
     }
   },
   "vietnam": {
