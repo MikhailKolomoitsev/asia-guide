@@ -7,7 +7,9 @@
       "Bash(PORT=3001 npm start)",
       "Bash(PORT=3002 npm start)",
       "Bash(curl:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "WebSearch",
+      "Bash(npm uninstall:*)"
     ],
     "deny": [],
     "ask": []

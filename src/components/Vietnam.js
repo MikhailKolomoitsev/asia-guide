@@ -1,39 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const Vietnam = () => {
   const { t } = useTranslation();
+  const [activeLocation, setActiveLocation] = useState('general');
+
+  const locations = [
+    { key: 'general', icon: '🇻🇳', name: t('vietnam.locations.general') },
+    { key: 'danang', icon: '🏖️', name: t('vietnam.locations.danang') },
+    { key: 'phuquoc', icon: '🏝️', name: t('vietnam.locations.phuquoc') }
+  ];
 
   const sections = [
     {
       key: 'visa',
       icon: '📄',
       title: t('vietnam.sections.visa'),
-      content: t('vietnam.content.visa')
+      content: t(`vietnam.content.${activeLocation}.visa`)
     },
     {
       key: 'housing',
       icon: '🏠',
       title: t('vietnam.sections.housing'),
-      content: t('vietnam.content.housing')
+      content: t(`vietnam.content.${activeLocation}.housing`)
     },
     {
       key: 'cost',
       icon: '💰',
       title: t('vietnam.sections.cost'),
-      content: t('vietnam.content.cost')
+      content: t(`vietnam.content.${activeLocation}.cost`)
     },
     {
       key: 'healthcare',
       icon: '🏥',
       title: t('vietnam.sections.healthcare'),
-      content: t('vietnam.content.healthcare')
+      content: t(`vietnam.content.${activeLocation}.healthcare`)
     },
     {
       key: 'culture',
       icon: '🏛️',
       title: t('vietnam.sections.culture'),
-      content: t('vietnam.content.culture')
+      content: t(`vietnam.content.${activeLocation}.culture`)
     }
   ];
 
@@ -42,6 +49,19 @@ const Vietnam = () => {
       <div className="country-header">
         <div className="country-flag">🇻🇳</div>
         <h1 className="country-title">{t('vietnam.title')}</h1>
+      </div>
+
+      <div className="location-tabs">
+        {locations.map((location) => (
+          <button
+            key={location.key}
+            className={`location-tab ${activeLocation === location.key ? 'active' : ''}`}
+            onClick={() => setActiveLocation(location.key)}
+          >
+            <span className="location-icon">{location.icon}</span>
+            <span className="location-name">{location.name}</span>
+          </button>
+        ))}
       </div>
 
       <div className="sections-container">

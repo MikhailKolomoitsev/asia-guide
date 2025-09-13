@@ -69,6 +69,11 @@
   },
   "vietnam": {
     "title": "Living in Vietnam",
+    "locations": {
+      "general": "General Info",
+      "danang": "Da Nang",
+      "phuquoc": "Phu Quoc"
+    },
     "sections": {
       "visa": "Visa Requirements",
       "housing": "Housing & Accommodation",
@@ -77,11 +82,27 @@
       "culture": "Culture & Lifestyle"
     },
     "content": {
-      "visa": "Vietnam offers tourist visas, work permits, and temporary residence cards. Consider the new digital nomad visa for remote workers.",
-      "housing": "From modern apartments in Ho Chi Minh City to traditional houses in Hanoi. Serviced apartments are popular among expats.",
-      "cost": "Vietnam is very affordable with monthly expenses ranging from $500-1500. Food and transportation are particularly inexpensive.",
-      "healthcare": "Healthcare quality varies by region. International hospitals are available in major cities like HCMC and Hanoi.",
-      "culture": "Vietnamese culture values family, education, and hard work. Learning Vietnamese basics will help with daily interactions."
+      "general": {
+        "visa": "Vietnam offers tourist visas, work permits, and temporary residence cards. Consider the new digital nomad visa for remote workers.",
+        "housing": "From modern apartments in Ho Chi Minh City to traditional houses in Hanoi. Serviced apartments are popular among expats.",
+        "cost": "Vietnam is very affordable with monthly expenses ranging from $500-1500. Food and transportation are particularly inexpensive.",
+        "healthcare": "Healthcare quality varies by region. International hospitals are available in major cities like HCMC and Hanoi.",
+        "culture": "Vietnamese culture values family, education, and hard work. Learning Vietnamese basics will help with daily interactions."
+      },
+      "danang": {
+        "visa": "Same visa requirements apply. Da Nang immigration office handles extensions. Tourist visas allow 30-60 days, extendable. Digital nomad visa becoming popular.",
+        "housing": "Modern beachfront condos and apartments available. Popular expat areas: My Khe Beach, Han River area. Monthly rent: $300-800 for quality accommodation.",
+        "cost": "Very affordable coastal city. Budget $600-1200/month for comfortable living. Local food from $1-3, motorbike rental $50/month, utilities $30-50.",
+        "healthcare": "Good healthcare with Da Nang Hospital, Family Medical Practice. Lower costs than HCMC/Hanoi. Emergency services adequate for most needs.",
+        "culture": "Relaxed coastal culture with friendly locals. Growing expat community. Beautiful beaches, mountains nearby. Less hectic than major cities, perfect work-life balance."
+      },
+      "phuquoc": {
+        "visa": "Vietnam visa requirements apply. Island location makes border runs to Cambodia possible. 30-day visa-free for many nationalities, extendable.",
+        "housing": "Beach resorts, villas, and guesthouses. Limited long-term rentals but growing. Monthly rent: $200-600. Many choose hotel/resort monthly rates.",
+        "cost": "Island premium pricing but still affordable. Budget $500-1000/month. Seafood abundant and cheap, transport limited to motorbikes, utilities higher than mainland.",
+        "healthcare": "Basic medical facilities only. Phu Quoc International Hospital for emergencies. Serious cases require mainland treatment in HCMC.",
+        "culture": "Island paradise lifestyle with fishing village charm. Growing tourism industry. Beautiful beaches, snorkeling, fishing. Peaceful but can feel isolated."
+      }
     }
   },
   "bali": {
@@ -116,6 +137,32 @@
       "cost": "KL offers great value with monthly expenses ranging from $700-2000. Public transportation and local food are very affordable.",
       "healthcare": "Malaysia has excellent healthcare with many internationally accredited hospitals. Medical tourism is popular.",
       "culture": "Multi-cultural society with Malay, Chinese, and Indian influences. English is widely spoken in business and urban areas."
+    }
+  },
+  "comparison": {
+    "title": "Life Quality Comparison",
+    "legend": "Scores are based on cost-effectiveness, quality, and expat experience",
+    "metrics": {
+      "priceQuality": {
+        "label": "Price/Quality Ratio",
+        "icon": "💰"
+      },
+      "medicine": {
+        "label": "Medical Quality",
+        "icon": "🏥"
+      },
+      "convenience": {
+        "label": "Convenience(roads, taxi, etc.)",
+        "icon": "⚡"
+      },
+      "foodQuality": {
+        "label": "Food Quality",
+        "icon": "🍽️"
+      },
+      "community": {
+        "label": "Community & Activities",
+        "icon": "👥"
+      }
     }
   }
 }

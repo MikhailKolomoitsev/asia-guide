@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import ComparisonTable from './ComparisonTable';
+import AsianParticles from './AsianParticles';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -34,6 +36,12 @@ const Home = () => {
 
   return (
     <div className="home">
+      <AsianParticles />
+
+      <div className="main-image-container">
+        <img src="/main.png" alt="Southeast Asia Guide" className="main-image" />
+      </div>
+
       <div className="hero-section">
         <div className="hero-content">
           <h1 className="hero-title">{t('home.title')}</h1>
@@ -44,7 +52,7 @@ const Home = () => {
 
       <div className="destinations-grid">
         {destinations.map((destination, index) => (
-          <Link 
+          <Link
             key={index}
             to={destination.path}
             className={`destination-card ${destination.image}`}
@@ -57,6 +65,8 @@ const Home = () => {
           </Link>
         ))}
       </div>
+
+      <ComparisonTable />
     </div>
   );
 };
