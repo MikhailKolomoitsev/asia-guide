@@ -11,7 +11,60 @@
     "title": "Living in South-Eastern Asia Guide",
     "subtitle": "Your comprehensive guide to living in Thailand, Vietnam, Bali, and Kuala Lumpur",
     "description": "Discover everything you need to know about relocating and living in the most popular destinations in South-Eastern Asia.",
-    "getStarted": "Get Started"
+    "getStarted": "Get Started",
+    "preview": {
+      "title": "What you'll get access to:",
+      "cards": {
+        "budget": {
+          "title": "Budget-Friendly Options",
+          "description": "Personalized recommendations tailored to your budget and preferences"
+        },
+        "crafted": {
+          "title": "Made with Care",
+          "description": "Carefully crafted guides with personal experiences and genuine recommendations"
+        },
+        "accommodation": {
+          "title": "Accommodation Recommendations",
+          "description": "Best accommodations, from budget hostels to luxury resorts"
+        },
+        "destinations": {
+          "title": "Where to Go",
+          "description": "Must-visit destinations and hidden gems"
+        },
+        "food": {
+          "title": "What to Try",
+          "description": "Local delicacies and authentic food experiences"
+        },
+        "dining": {
+          "title": "Where to Eat",
+          "description": "Best restaurants, street food, and local eateries"
+        },
+        "avoid": {
+          "title": "What Not to Do",
+          "description": "Common mistakes to avoid and safety tips"
+        },
+        "mentality": {
+          "title": "Cultural Insights",
+          "description": "Cultural insights and local customs"
+        },
+        "money": {
+          "title": "Money Exchange Tips",
+          "description": "Best exchange rates and money tips"
+        }
+      }
+    },
+    "bonus": {
+      "title": "Here's your first Bonus - comparison table by locations"
+    },
+    "teaser": {
+      "title": "Want to know why? Details below"
+    },
+    "auth": {
+      "title": "Access Premium Travel Guides",
+      "description": "Register to unlock detailed guides, insider tips, and curated recommendations for Southeast Asia's most amazing destinations.",
+      "registerBtn": "Register Now",
+      "loginBtn": "Login"
+    }
   },
   "thailand": {
     "title": "Living in Thailand",

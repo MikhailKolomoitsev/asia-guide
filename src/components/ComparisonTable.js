@@ -81,7 +81,6 @@ const ComparisonTable = () => {
 
   return (
     <div className="comparison-table-container">
-      <h2 className="comparison-title">📊 {t('comparison.title')}</h2>
       <div className="comparison-table">
         <div className="table-header">
           <div className="metric-column">
@@ -108,10 +107,6 @@ const ComparisonTable = () => {
             ))}
           </div>
         ))}
-      </div>
-
-      <div className="table-legend">
-        <p>💡 {t('comparison.legend')}</p>
       </div>
     </div>
   );
