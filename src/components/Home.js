@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import ComparisonTable from './ComparisonTable';
 import AsianParticles from './AsianParticles';
+import PhotoSlider from './PhotoSlider';
 
 const Home = () => {
   const { t, i18n } = useTranslation();
@@ -107,7 +108,7 @@ const Home = () => {
           <h1 className="hero-title">{t('home.title')}</h1>
 
           <div className="main-image-container">
-            <img src="/main.png" alt="Southeast Asia Guide" className="main-image" />
+            <PhotoSlider />
           </div>
           <p className="hero-description">{t('home.description')}</p>
         </div>

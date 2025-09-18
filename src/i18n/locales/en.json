@@ -64,6 +64,30 @@
       "description": "Register to unlock detailed guides, insider tips, and curated recommendations for Southeast Asia's most amazing destinations.",
       "registerBtn": "Register Now",
       "loginBtn": "Login"
+    },
+    "slider": {
+      "photos": {
+        "author": {
+          "alt": "Author working on balcony in Southeast Asia",
+          "caption": "Creating this guide from my home in Southeast Asia"
+        },
+        "thailand": {
+          "alt": "Beautiful Thai temple",
+          "caption": "Exploring ancient temples in Thailand"
+        },
+        "vietnam": {
+          "alt": "Vietnamese street food scene",
+          "caption": "Discovering authentic street food in Vietnam"
+        },
+        "bali": {
+          "alt": "Bali rice terraces",
+          "caption": "Working remotely from Bali's rice terraces"
+        },
+        "malaysia": {
+          "alt": "Kuala Lumpur skyline",
+          "caption": "Modern living in Kuala Lumpur"
+        }
+      }
     }
   },
   "thailand": {
