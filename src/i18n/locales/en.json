@@ -67,25 +67,53 @@
     },
     "slider": {
       "photos": {
-        "author": {
-          "alt": "Author working on balcony in Southeast Asia",
-          "caption": "Creating this guide from my home in Southeast Asia"
+        "discoverCreativity": {
+          "alt": "discover-creativity",
+          "caption": "Discover Creativity"
         },
-        "thailand": {
-          "alt": "Beautiful Thai temple",
-          "caption": "Exploring ancient temples in Thailand"
+        "enjoyTheSky": {
+          "alt": "enjoy-the-sky",
+          "caption": "Enjoy the Sky"
         },
-        "vietnam": {
-          "alt": "Vietnamese street food scene",
-          "caption": "Discovering authentic street food in Vietnam"
+        "feelYourSpirit": {
+          "alt": "feel-your-spirit",
+          "caption": "Feel Your Spirit"
         },
-        "bali": {
-          "alt": "Bali rice terraces",
-          "caption": "Working remotely from Bali's rice terraces"
+        "img7013": {
+          "alt": "IMG_7013",
+          "caption": "Beautiful Moment"
         },
-        "malaysia": {
-          "alt": "Kuala Lumpur skyline",
-          "caption": "Modern living in Kuala Lumpur"
+        "katana": {
+          "alt": "katana",
+          "caption": "Katana"
+        },
+        "meetFriends": {
+          "alt": "meet-friends",
+          "caption": "Meet Friends"
+        },
+        "reachTopOfSkies": {
+          "alt": "reach-top-of-skies",
+          "caption": "Reach Top of Skies"
+        },
+        "seeMooling": {
+          "alt": "see-mooling",
+          "caption": "See Mooling"
+        },
+        "swimInWaterfalls": {
+          "alt": "swim-in-waterfals",
+          "caption": "Swim in Waterfalls"
+        },
+        "takeMomToSurfing": {
+          "alt": "take-mom-to-surfing",
+          "caption": "Take Mom to Surfing"
+        },
+        "tryAdrenaline": {
+          "alt": "try-adrenaline",
+          "caption": "Try Adrenaline"
+        },
+        "watchSunsets": {
+          "alt": "watch-sunsets",
+          "caption": "Watch Sunsets"
         }
       }
     }
