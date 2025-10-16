@@ -1,0 +1,273 @@
+{
+  "navigation": {
+    "home": "Home",
+    "thailand": "Thailand",
+    "vietnam": "Vietnam",
+    "bali": "Bali",
+    "kualaLumpur": "Kuala Lumpur",
+    "language": "Language"
+  },
+  "home": {
+    "title": "Living in South-Eastern Asia Guide",
+    "subtitle": "Your comprehensive guide to living in Thailand, Vietnam, Bali, and Kuala Lumpur",
+    "description": "Discover everything you need to know about relocating and living in the most popular destinations in South-Eastern Asia.",
+    "getStarted": "Get Started",
+    "preview": {
+      "title": "What you'll get access to:",
+      "cards": {
+        "budget": {
+          "title": "Budget-Friendly Options",
+          "description": "Personalized recommendations tailored to your budget and preferences"
+        },
+        "crafted": {
+          "title": "Made with Care",
+          "description": "Carefully crafted guides with personal experiences and genuine recommendations"
+        },
+        "accommodation": {
+          "title": "Accommodation Recommendations",
+          "description": "Best accommodations, from budget hostels to luxury resorts"
+        },
+        "destinations": {
+          "title": "Where to Go",
+          "description": "Must-visit destinations and hidden gems"
+        },
+        "food": {
+          "title": "What to Try",
+          "description": "Local delicacies and authentic food experiences"
+        },
+        "dining": {
+          "title": "Where to Eat",
+          "description": "Best restaurants, street food, and local eateries"
+        },
+        "avoid": {
+          "title": "What Not to Do",
+          "description": "Common mistakes to avoid and safety tips"
+        },
+        "mentality": {
+          "title": "Cultural Insights",
+          "description": "Cultural insights and local customs"
+        },
+        "money": {
+          "title": "Money Exchange Tips",
+          "description": "Best exchange rates and money tips"
+        }
+      }
+    },
+    "bonus": {
+      "title": "Here's your first Bonus - comparison table by locations"
+    },
+    "teaser": {
+      "title": "Want to know why? Details below"
+    },
+    "auth": {
+      "title": "Access Premium Travel Guides",
+      "description": "Register to unlock detailed guides, insider tips, and curated recommendations for Southeast Asia's most amazing destinations.",
+      "registerBtn": "Register Now",
+      "loginBtn": "Login"
+    },
+    "slider": {
+      "photos": {
+        "discoverCreativity": {
+          "alt": "discover-creativity",
+          "caption": "Discover Creativity"
+        },
+        "enjoyTheSky": {
+          "alt": "enjoy-the-sky",
+          "caption": "Enjoy the Sky"
+        },
+        "feelYourSpirit": {
+          "alt": "feel-your-spirit",
+          "caption": "Feel Your Spirit"
+        },
+        "img7013": {
+          "alt": "IMG_7013",
+          "caption": "Beautiful Moment"
+        },
+        "katana": {
+          "alt": "katana",
+          "caption": "Katana"
+        },
+        "meetFriends": {
+          "alt": "meet-friends",
+          "caption": "Meet Friends"
+        },
+        "reachTopOfSkies": {
+          "alt": "reach-top-of-skies",
+          "caption": "Reach Top of Skies"
+        },
+        "seeMooling": {
+          "alt": "see-mooling",
+          "caption": "See Mooling"
+        },
+        "swimInWaterfalls": {
+          "alt": "swim-in-waterfals",
+          "caption": "Swim in Waterfalls"
+        },
+        "takeMomToSurfing": {
+          "alt": "take-mom-to-surfing",
+          "caption": "Take Mom to Surfing"
+        },
+        "tryAdrenaline": {
+          "alt": "try-adrenaline",
+          "caption": "Try Adrenaline"
+        },
+        "watchSunsets": {
+          "alt": "watch-sunsets",
+          "caption": "Watch Sunsets"
+        }
+      }
+    }
+  },
+  "thailand": {
+    "title": "Living in Thailand",
+    "locations": {
+      "general": "General Info",
+      "islands": "Islands (Koh Samui/Koh Phangan)",
+      "phuket": "Phuket",
+      "bangkok": "Bangkok",
+      "chiangmai": "Chiang Mai"
+    },
+    "sections": {
+      "visa": "Visa Requirements",
+      "housing": "Housing & Accommodation",
+      "cost": "Cost of Living",
+      "healthcare": "Healthcare",
+      "culture": "Culture & Lifestyle"
+    },
+    "content": {
+      "general": {
+        "visa": "Thailand offers various visa options including Tourist Visa, Non-Immigrant Visa, and Elite Visa. For long-term stays, consider the Smart Visa or retirement visa.",
+        "housing": "Housing options range from modern condos in Bangkok to beachfront villas in Phuket. Rental prices vary significantly by location.",
+        "cost": "Thailand offers excellent value for money. Monthly expenses can range from $800-2000 depending on lifestyle and location.",
+        "healthcare": "Thailand has excellent healthcare facilities, especially in Bangkok and major tourist areas. Consider international health insurance.",
+        "culture": "Thai culture emphasizes respect, Buddhism, and family values. Learning basic Thai phrases will be greatly appreciated."
+      },
+      "islands": {
+        "visa": "Same visa requirements apply across Thailand. Tourist visas allow 30-60 days, extendable. For longer stays on the islands, consider ED visas or Elite visas.",
+        "housing": "Island accommodation ranges from beach bungalows to luxury villas. Koh Samui offers more upscale options, while Koh Phangan has budget-friendly choices. Monthly rentals: $300-1500.",
+        "cost": "Island living costs vary greatly. Koh Samui is more expensive ($1000-2500/month), while Koh Phangan offers budget options ($600-1500/month). Food and transport costs are higher than mainland.",
+        "healthcare": "Koh Samui has several private hospitals including Bangkok Hospital Samui. Koh Phangan has basic medical facilities. Serious cases may require mainland treatment.",
+        "culture": "Island culture is relaxed and tourism-focused. Full Moon Parties on Koh Phangan attract international crowds. Respect local Buddhist customs and marine environment."
+      },
+      "phuket": {
+        "visa": "Phuket follows standard Thai visa rules. Many expats use tourist visas with border runs to Malaysia. Elite Visa popular for long-term residents.",
+        "housing": "From beachfront condos in Patong to hillside villas in Kata. Popular expat areas: Rawai, Nai Harn, Kamala. Monthly rent: $500-3000 depending on location and luxury level.",
+        "cost": "Phuket is Thailand's most expensive province. Budget $1200-3000/month. Western food, alcohol, and accommodation are pricier. Local markets offer affordable options.",
+        "healthcare": "Excellent healthcare with Bangkok Hospital Phuket, Phuket International Hospital. Medical tourism popular. Comprehensive facilities for emergencies and routine care.",
+        "culture": "Mix of Thai-Buddhist culture with international beach lifestyle. Tourist areas are cosmopolitan. Respect local customs, especially during religious festivals."
+      },
+      "bangkok": {
+        "visa": "Bangkok is the hub for visa processing. Immigration office at Chaeng Watthana handles extensions. Many visa agencies available. Easy access to embassies for visa runs.",
+        "housing": "Huge variety from budget hostels to luxury condos. Popular expat areas: Sukhumvit, Silom, Thonglor, Ari. BTS/MRT access important. Monthly rent: $300-2000.",
+        "cost": "Very affordable major city. Budget $800-2000/month. Street food from $1-3, local transport cheap. Western lifestyle costs more but still reasonable compared to Western cities.",
+        "healthcare": "World-class healthcare including Bumrungrad, Bangkok Hospital, Samitivej. Medical tourism destination. Excellent facilities for all medical needs.",
+        "culture": "Urban Thai culture with strong Buddhist influence. Respect for monarchy important. Mix of traditional and modern. Learning Thai helpful for deeper integration."
+      },
+      "chiangmai": {
+        "visa": "Chiang Mai immigration office handles visa extensions. Popular with digital nomads using tourist visas and ED visas. Visa runs to Myanmar or Laos common.",
+        "housing": "Affordable options from traditional Thai houses to modern condos. Popular areas: Nimman, Old City, Hang Dong. Monthly rent: $200-1000, great value for money.",
+        "cost": "Very affordable living. Budget $600-1500/month for comfortable lifestyle. Excellent local food scene, affordable transportation, and lower accommodation costs.",
+        "healthcare": "Good healthcare with Chiang Mai Ram, McCormick Hospital. Lower costs than Bangkok. Adequate for most needs, complex cases may require Bangkok treatment.",
+        "culture": "Northern Thai (Lanna) culture distinct from Bangkok. More relaxed pace, strong arts scene, mountain lifestyle. Digital nomad community, co-working spaces abundant."
+      }
+    }
+  },
+  "vietnam": {
+    "title": "Living in Vietnam",
+    "locations": {
+      "general": "General Info",
+      "danang": "Da Nang",
+      "phuquoc": "Phu Quoc"
+    },
+    "sections": {
+      "visa": "Visa Requirements",
+      "housing": "Housing & Accommodation",
+      "cost": "Cost of Living",
+      "healthcare": "Healthcare",
+      "culture": "Culture & Lifestyle"
+    },
+    "content": {
+      "general": {
+        "visa": "Vietnam offers tourist visas, work permits, and temporary residence cards. Consider the new digital nomad visa for remote workers.",
+        "housing": "From modern apartments in Ho Chi Minh City to traditional houses in Hanoi. Serviced apartments are popular among expats.",
+        "cost": "Vietnam is very affordable with monthly expenses ranging from $500-1500. Food and transportation are particularly inexpensive.",
+        "healthcare": "Healthcare quality varies by region. International hospitals are available in major cities like HCMC and Hanoi.",
+        "culture": "Vietnamese culture values family, education, and hard work. Learning Vietnamese basics will help with daily interactions."
+      },
+      "danang": {
+        "visa": "Same visa requirements apply. Da Nang immigration office handles extensions. Tourist visas allow 30-60 days, extendable. Digital nomad visa becoming popular.",
+        "housing": "Modern beachfront condos and apartments available. Popular expat areas: My Khe Beach, Han River area. Monthly rent: $300-800 for quality accommodation.",
+        "cost": "Very affordable coastal city. Budget $600-1200/month for comfortable living. Local food from $1-3, motorbike rental $50/month, utilities $30-50.",
+        "healthcare": "Good healthcare with Da Nang Hospital, Family Medical Practice. Lower costs than HCMC/Hanoi. Emergency services adequate for most needs.",
+        "culture": "Relaxed coastal culture with friendly locals. Growing expat community. Beautiful beaches, mountains nearby. Less hectic than major cities, perfect work-life balance."
+      },
+      "phuquoc": {
+        "visa": "Vietnam visa requirements apply. Island location makes border runs to Cambodia possible. 30-day visa-free for many nationalities, extendable.",
+        "housing": "Beach resorts, villas, and guesthouses. Limited long-term rentals but growing. Monthly rent: $200-600. Many choose hotel/resort monthly rates.",
+        "cost": "Island premium pricing but still affordable. Budget $500-1000/month. Seafood abundant and cheap, transport limited to motorbikes, utilities higher than mainland.",
+        "healthcare": "Basic medical facilities only. Phu Quoc International Hospital for emergencies. Serious cases require mainland treatment in HCMC.",
+        "culture": "Island paradise lifestyle with fishing village charm. Growing tourism industry. Beautiful beaches, snorkeling, fishing. Peaceful but can feel isolated."
+      }
+    }
+  },
+  "bali": {
+    "title": "Living in Bali, Indonesia",
+    "sections": {
+      "visa": "Visa Requirements",
+      "housing": "Housing & Accommodation",
+      "cost": "Cost of Living",
+      "healthcare": "Healthcare",
+      "culture": "Culture & Lifestyle"
+    },
+    "content": {
+      "visa": "Indonesia offers B211 Visit Visa, B213 Business Visa, and the new B213A Digital Nomad Visa. Visa runs to Singapore are common.",
+      "housing": "From beachfront villas in Canggu to rice field views in Ubud. Many expats prefer monthly villa rentals.",
+      "cost": "Bali can be very affordable or expensive depending on lifestyle. Budget $600-2500 per month depending on accommodation and dining choices.",
+      "healthcare": "Private healthcare is recommended. BIMC and Siloam hospitals offer international standards in major areas.",
+      "culture": "Balinese Hindu culture emphasizes harmony, community, and spirituality. Respect local customs and dress codes at temples."
+    }
+  },
+  "kualaLumpur": {
+    "title": "Living in Kuala Lumpur, Malaysia",
+    "sections": {
+      "visa": "Visa Requirements",
+      "housing": "Housing & Accommodation",
+      "cost": "Cost of Living",
+      "healthcare": "Healthcare",
+      "culture": "Culture & Lifestyle"
+    },
+    "content": {
+      "visa": "Malaysia offers MM2H program, work visas, and student visas. The new DE Rantau Nomad Pass is available for digital nomads.",
+      "housing": "Modern condos and serviced apartments are popular. KLCC, Mont Kiara, and Bangsar are expat-friendly areas.",
+      "cost": "KL offers great value with monthly expenses ranging from $700-2000. Public transportation and local food are very affordable.",
+      "healthcare": "Malaysia has excellent healthcare with many internationally accredited hospitals. Medical tourism is popular.",
+      "culture": "Multi-cultural society with Malay, Chinese, and Indian influences. English is widely spoken in business and urban areas."
+    }
+  },
+  "comparison": {
+    "title": "Life Quality Comparison",
+    "legend": "Scores are based on cost-effectiveness, quality, and expat experience",
+    "metrics": {
+      "priceQuality": {
+        "label": "Price/Quality Ratio",
+        "icon": "💰"
+      },
+      "medicine": {
+        "label": "Medical Quality",
+        "icon": "🏥"
+      },
+      "convenience": {
+        "label": "Convenience(roads, taxi, etc.)",
+        "icon": "⚡"
+      },
+      "foodQuality": {
+        "label": "Food Quality",
+        "icon": "🍽️"
+      },
+      "community": {
+        "label": "Community & Activities",
+        "icon": "👥"
+      }
+    }
+  }
+}

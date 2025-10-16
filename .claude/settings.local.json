@@ -9,7 +9,8 @@
       "Bash(curl:*)",
       "Bash(npm run build:*)",
       "WebSearch",
-      "Bash(npm uninstall:*)"
+      "Bash(npm uninstall:*)",
+      "Bash(tree:*)"
     ],
     "deny": [],
     "ask": []
