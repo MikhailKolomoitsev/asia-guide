@@ -1,270 +1,110 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
-import ComparisonTable from './ComparisonTable';
-import AsianParticles from './AsianParticles';
-import PhotoSlider from './PhotoSlider';
+// HomePage.tsx (Next.js, TailwindCSS, full marketing-focused layout)
 
-const Home = () => {
-  const { t, i18n } = useTranslation();
-  const [isRegistered, setIsRegistered] = useState(false);
-  const [activeCardIndex, setActiveCardIndex] = useState(-1);
-  const cardsRef = useRef([]);
+import { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
+export default function HomePage() {
+  const [language, setLanguage] = useState < 'en' | 'uk' > ('uk');
+
+  const toggleLanguage = () => {
+    setLanguage((prev) => (prev === 'en' ? 'uk' : 'en'));
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      // Only activate on mobile/tablet screens
-      if (window.innerWidth > 1024) return;
-
-      const scrollY = window.scrollY;
-      const windowHeight = window.innerHeight;
-      let newActiveIndex = -1;
-
-      cardsRef.current.forEach((card, index) => {
-        if (card) {
-          const cardRect = card.getBoundingClientRect();
-          const cardTop = cardRect.top + scrollY;
-          const cardBottom = cardTop + cardRect.height;
-
-          // Check if card is in the center third of the viewport
-          const viewportCenter = scrollY + windowHeight / 2;
-          const centerThird = windowHeight / 3;
-
-          if (cardTop <= viewportCenter + centerThird / 2 &&
-              cardBottom >= viewportCenter - centerThird / 2) {
-            newActiveIndex = index;
-          }
-        }
-      });
-
-      setActiveCardIndex(newActiveIndex);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', handleScroll);
-
-    // Initial check
-    handleScroll();
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', handleScroll);
-    };
-  }, []);
-
-  const destinations = [
-    {
-      name: t('navigation.thailand'),
-      path: '/thailand',
-      flag: '🇹🇭',
-      image: 'thailand-bg'
-    },
-    {
-      name: t('navigation.vietnam'),
-      path: '/vietnam',
-      flag: '🇻🇳',
-      image: 'vietnam-bg'
-    },
-    {
-      name: t('navigation.bali'),
-      path: '/bali',
-      flag: '🇮🇩',
-      image: 'bali-bg'
-    },
-    {
-      name: t('navigation.kualaLumpur'),
-      path: '/kuala-lumpur',
-      flag: '🇲🇾',
-      image: 'kl-bg'
-    }
-  ];
-
   return (
-    <div className="home">
-      <div className="home-language-switcher">
-        <div className="language-switcher">
-          <span>{t('navigation.language')}: </span>
-          <button
-            onClick={() => changeLanguage('en')}
-            className={i18n.language === 'en' ? 'lang-btn active' : 'lang-btn'}
-          >
-            EN
-          </button>
-          <button
-            onClick={() => changeLanguage('uk')}
-            className={i18n.language === 'uk' ? 'lang-btn active' : 'lang-btn'}
-          >
-            УК
-          </button>
-        </div>
+    <main className="min-h-screen bg-gradient-to-b from-white to-blue-50 text-gray-900">
+      {/* Language Switcher */}
+      <div className="flex justify-end p-4">
+        <button
+          onClick={toggleLanguage}
+          className="text-sm px-4 py-2 border rounded-md hover:bg-gray-100"
+        >
+          {language === 'en' ? 'Українська' : 'English'}
+        </button>
       </div>
 
-      <div className="hero-section">
-        <div className="hero-content">
-          <h1 className="hero-title">{t('home.title')}</h1>
-
-          <div className="main-image-container">
-            <PhotoSlider />
-          </div>
-          <p className="hero-description">{t('home.description')}</p>
+      {/* Hero Section */}
+      <section className="text-center px-4 py-16 max-w-4xl mx-auto">
+        <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+          ✨ DreamNomad: {language === 'en' ? 'Your Global Guide to Freedom & Life Abroad' : 'Глобальний Гайд для Твого Життя-Мрії'}
+        </h1>
+        <p className="text-lg md:text-xl text-gray-700 mb-8">
+          {language === 'en'
+            ? 'DreamNomad isn’t just a guide. It’s your tool for freedom: to move, to grow, to experience the world from the inside.'
+            : 'DreamNomad — це не просто гід. Це твій інструмент свободи: переїхати, спробувати нове життя, побачити світ зсередини.'}
+        </p>
+        <div className="flex justify-center gap-4">
+          <Link href="/register">
+            <a className="px-6 py-3 text-white bg-gradient-to-r from-orange-500 to-pink-500 rounded-lg shadow-lg hover:opacity-90">
+              {language === 'en' ? 'Get Access Now' : 'Отримати доступ'}
+            </a>
+          </Link>
+          <Link href="#how-it-works">
+            <a className="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-100">
+              {language === 'en' ? 'How It Works' : 'Як це працює'}
+            </a>
+          </Link>
         </div>
-      </div>
+      </section>
 
-      {isRegistered ? (
-        <div className="destinations-grid">
-          {destinations.map((destination, index) => (
-            <Link
-              key={index}
-              to={destination.path}
-              className={`destination-card ${destination.image}`}
-            >
-              <div className="destination-overlay">
-                <span className="destination-flag">{destination.flag}</span>
-                <h3 className="destination-name">{destination.name}</h3>
-                <button className="destination-btn">{t('home.getStarted')}</button>
-              </div>
-            </Link>
-          ))}
+      {/* Core Idea */}
+      <section className="bg-white py-16 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl font-semibold mb-6">🧭 {language === 'en' ? 'Core Idea' : 'Основна ідея'}</h2>
+          <p className="mb-4">
+            {language === 'en'
+              ? 'A universal guide to visiting and living in your Dream Country.'
+              : 'Універсальний гайд, як відвідати та прожити в Країні Твоєї Мрії'}
+          </p>
+          <ul className="text-left space-y-3 text-lg">
+            <li>• {language === 'en' ? 'Step-by-step self-discovery & country selection framework.' : 'Чіткий покроковий план, як зрозуміти себе і обрати країну.'}</li>
+            <li>• {language === 'en' ? 'Verified contacts, links, tools, and agencies that work.' : 'База перевірених контактів, посилань, ресурсів, які реально працюють.'}</li>
+            <li>• {language === 'en' ? 'Reusable in any country – again and again.' : 'Інструмент, який можна застосовувати в будь-якій країні — знову і знову.'}</li>
+          </ul>
         </div>
-      ) : (
-        <div className="content-preview">
-          <AsianParticles />
-          <h3 className="preview-title">{t('home.preview.title')}</h3>
-          <div className="content-cards-grid">
-            <div
-              className={`content-card ${activeCardIndex === 0 ? 'scroll-active' : ''}`}
-              tabIndex="0"
-              ref={el => cardsRef.current[0] = el}
-            >
-              <div className="content-card-icon">💎</div>
-              <h4 className="content-card-title">{t('home.preview.cards.budget.title')}</h4>
-              <p className="content-card-description">{t('home.preview.cards.budget.description')}</p>
-            </div>
+      </section>
 
-            <div
-              className={`content-card ${activeCardIndex === 1 ? 'scroll-active' : ''}`}
-              tabIndex="0"
-              ref={el => cardsRef.current[1] = el}
-            >
-              <div className="content-card-icon">❤️</div>
-              <h4 className="content-card-title">{t('home.preview.cards.crafted.title')}</h4>
-              <p className="content-card-description">{t('home.preview.cards.crafted.description')}</p>
-            </div>
-
-            <div
-              className={`content-card ${activeCardIndex === 2 ? 'scroll-active' : ''}`}
-              tabIndex="0"
-              ref={el => cardsRef.current[2] = el}
-            >
-              <div className="content-card-icon">🏠</div>
-              <h4 className="content-card-title">{t('home.preview.cards.accommodation.title')}</h4>
-              <p className="content-card-description">{t('home.preview.cards.accommodation.description')}</p>
-            </div>
-
-            <div
-              className={`content-card ${activeCardIndex === 3 ? 'scroll-active' : ''}`}
-              tabIndex="0"
-              ref={el => cardsRef.current[3] = el}
-            >
-              <div className="content-card-icon">🗺️</div>
-              <h4 className="content-card-title">{t('home.preview.cards.destinations.title')}</h4>
-              <p className="content-card-description">{t('home.preview.cards.destinations.description')}</p>
-            </div>
-
-            <div
-              className={`content-card ${activeCardIndex === 4 ? 'scroll-active' : ''}`}
-              tabIndex="0"
-              ref={el => cardsRef.current[4] = el}
-            >
-              <div className="content-card-icon">🍜</div>
-              <h4 className="content-card-title">{t('home.preview.cards.food.title')}</h4>
-              <p className="content-card-description">{t('home.preview.cards.food.description')}</p>
-            </div>
-
-            <div
-              className={`content-card ${activeCardIndex === 5 ? 'scroll-active' : ''}`}
-              tabIndex="0"
-              ref={el => cardsRef.current[5] = el}
-            >
-              <div className="content-card-icon">🍽️</div>
-              <h4 className="content-card-title">{t('home.preview.cards.dining.title')}</h4>
-              <p className="content-card-description">{t('home.preview.cards.dining.description')}</p>
-            </div>
-
-            <div
-              className={`content-card ${activeCardIndex === 6 ? 'scroll-active' : ''}`}
-              tabIndex="0"
-              ref={el => cardsRef.current[6] = el}
-            >
-              <div className="content-card-icon">⚠️</div>
-              <h4 className="content-card-title">{t('home.preview.cards.avoid.title')}</h4>
-              <p className="content-card-description">{t('home.preview.cards.avoid.description')}</p>
-            </div>
-
-            <div
-              className={`content-card ${activeCardIndex === 7 ? 'scroll-active' : ''}`}
-              tabIndex="0"
-              ref={el => cardsRef.current[7] = el}
-            >
-              <div className="content-card-icon">🧠</div>
-              <h4 className="content-card-title">{t('home.preview.cards.mentality.title')}</h4>
-              <p className="content-card-description">{t('home.preview.cards.mentality.description')}</p>
-            </div>
-
-            <div
-              className={`content-card ${activeCardIndex === 8 ? 'scroll-active' : ''}`}
-              tabIndex="0"
-              ref={el => cardsRef.current[8] = el}
-            >
-              <div className="content-card-icon">💰</div>
-              <h4 className="content-card-title">{t('home.preview.cards.money.title')}</h4>
-              <p className="content-card-description">{t('home.preview.cards.money.description')}</p>
-            </div>
-          </div>
+      {/* Dream Journey Plan Section */}
+      <section id="how-it-works" className="bg-blue-50 py-20 px-4">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-semibold mb-12 text-center">🧠 {language === 'en' ? 'Discovery Cycle Through Countries' : 'Цикл самовідкриття через країни'}</h2>
+          <ol className="space-y-6 text-lg">
+            <li><strong>0.</strong> {language === 'en' ? 'Honestly answer: what do I really want?' : 'Чесно відповісти: що я хочу?'}
+              <ul className="ml-6 list-disc text-gray-700">
+                <li>{language === 'en' ? 'Why am I going? Escape, grow, explore?' : 'Для чого я їду? Втекти, знайти, вирости, відчути?'}</li>
+                <li>{language === 'en' ? 'City/nature, loud/quiet, solo/community?' : 'Який стиль життя я шукаю: місто/природа, шум/спокій, комʼюніті/усамітнення?'}</li>
+              </ul>
+            </li>
+            <li><strong>1.</strong> {language === 'en' ? 'Research without rosy glasses' : 'Дослідити країну без рожевих окулярів'}
+              <ul className="ml-6 list-disc text-gray-700">
+                <li>{language === 'en' ? 'Minimal research: prices, visa, culture' : 'Мінімальний ресерч: ціни, віза, культура'}</li>
+                <li>{language === 'en' ? 'Facts only — no expectations' : 'Без очікувань — лише факти й open mind'}</li>
+              </ul>
+            </li>
+            <li><strong>2.</strong> {language === 'en' ? 'Make and commit to the decision' : 'Прийняти рішення і зафіксувати його'}
+              <ul className="ml-6 list-disc text-gray-700">
+                <li>{language === 'en' ? 'Buy ticket, start visa, plan budget' : 'Купити квитки, зробити візу, спланувати бюджет'}</li>
+                <li>“Done is better than perfect”</li>
+              </ul>
+            </li>
+            <li><strong>3.</strong> {language === 'en' ? 'Go meet your new reality' : 'Поїхати на зустріч своєму щастю'}
+              <ul className="ml-6 list-disc text-gray-700">
+                <li>{language === 'en' ? 'Experience it fully' : 'Відкрити себе в новій реальності'}</li>
+                <li>{language === 'en' ? 'Stay in flow, not clinging to plans' : 'Бути в потоці, не чіплятись за плани'}</li>
+              </ul>
+            </li>
+            <li><strong>4.</strong> {language === 'en' ? 'Check: does this place fit me?' : 'На місці розібратись — це моє?'}
+              <ul className="ml-6 list-disc text-gray-700">
+                <li>{language === 'en' ? 'Evaluate after 2 weeks / month' : 'Аналіз через 2 тижні/місяць: як відчувається?'}</li>
+                <li>{language === 'en' ? 'What does it give or take?' : 'Що дає ця країна? Що забирає?'}</li>
+              </ul>
+            </li>
+            <li><strong>5.</strong> {language === 'en' ? 'Repeat with a new country' : 'Повторити з новою країною'}</li>
+          </ol>
         </div>
-      )}
+      </section>
 
-      <div className="bonus-section">
-        <h3 className="bonus-title">{t('home.bonus.title')}</h3>
-      </div>
-
-      <ComparisonTable />
-
-      <div className="teaser-section">
-        <h3 className="teaser-title">{t('home.teaser.title')}</h3>
-      </div>
-
-      {!isRegistered && (
-        <div className="auth-section">
-          <div className="auth-content">
-            <h2 className="auth-title">{t('home.auth.title')}</h2>
-            <p className="auth-description">
-              {t('home.auth.description')}
-            </p>
-            <div className="auth-buttons">
-              <button
-                className="auth-btn register-btn"
-                onClick={() => setIsRegistered(true)}
-              >
-                {t('home.auth.registerBtn')}
-              </button>
-              <div className="auth-separator"></div>
-              <button
-                className="auth-btn login-btn"
-                onClick={() => setIsRegistered(true)}
-              >
-                {t('home.auth.loginBtn')}
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
-    </div>
+      {/* Regions + Features section will stay below and be reused */}
+    </main>
   );
-};
-
-export default Home;
+}

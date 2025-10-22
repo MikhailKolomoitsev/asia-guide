@@ -10,7 +10,8 @@
       "Bash(npm run build:*)",
       "WebSearch",
       "Bash(npm uninstall:*)",
-      "Bash(tree:*)"
+      "Bash(tree:*)",
+      "Bash(rm -rf .next)"
     ],
     "deny": [],
     "ask": []

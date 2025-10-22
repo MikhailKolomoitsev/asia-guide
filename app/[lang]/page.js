@@ -5,12 +5,11 @@ import Link from 'next/link';
 import { useTranslation } from '../i18n/client';
 import ComparisonTable from '../components/ComparisonTable';
 import AsianParticles from '../components/AsianParticles';
-import PhotoSlider from '../components/PhotoSlider';
 import { useRouter } from 'next/navigation';
 
 export default function Home({ params }) {
   const { lang } = use(params);
-  const { t, i18n } = useTranslation(lang);
+  const { t } = useTranslation(lang);
   const [isRegistered, setIsRegistered] = useState(false);
   const [activeCardIndex, setActiveCardIndex] = useState(-1);
   const cardsRef = useRef([]);
@@ -106,13 +105,33 @@ export default function Home({ params }) {
       </div>
 
       <div className="hero-section">
-        <div className="hero-content">
-          <h1 className="hero-title">{t('home.title')}</h1>
-
-          <div className="main-image-container">
-            <PhotoSlider lang={lang} />
+        <div className="hero-background-image">
+          <img src="/content/home_main.PNG" alt="author" />
+        </div>
+        <div className="hero-overlay">
+          <div className="hero-content">
+            <h1 className="hero-name" dangerouslySetInnerHTML={{ __html: t('home.heroName') }}></h1>
+            <p className="hero-tagline">{t('home.description')}</p>
+            <div className="hero-buttons">
+              <button className="hero-btn hero-btn-primary">
+                {t('home.auth.registerBtn')}
+              </button>
+            </div>
           </div>
-          <p className="hero-description">{t('home.description')}</p>
+          <div className="hero-video-frame">
+            <div className="iphone-frame">
+              <div className="iphone-notch"></div>
+              <video
+                className="iphone-video"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source src="/content/presentation.MOV" type="video/mp4" />
+              </video>
+            </div>
+          </div>
         </div>
       </div>
 
