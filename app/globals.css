@@ -190,17 +190,16 @@ body {
 
 .hero-background-image {
   position: absolute;
-  top: 0;
+  top: 850px;
   left: 0;
   width: 100%;
-  height: 100%;
   z-index: 0;
 }
 
 .hero-background-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   filter: brightness(0.9) contrast(1.1) saturate(1.2);
 }
@@ -209,7 +208,6 @@ body {
   position: relative;
   top: 0;
   width: 100%;
-  height: 100vh;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%);
   display: flex;
   align-items: center;
@@ -614,17 +612,21 @@ body {
 
   .hero-content {
     max-width: 100%;
+    order: 1;
+    display: contents;
   }
 
   .hero-name {
+    padding-top: 30px;
+    margin-bottom: 100px;
     font-size: clamp(2.5rem, 9vw, 4rem);
     line-height: 0.9;
     letter-spacing: -0.03em;
   }
 
   .hero-tagline {
+    margin-bottom: 450px;
     font-size: clamp(0.9rem, 2.5vw, 1.1rem);
-    margin-bottom: 35px;
   }
 
   .hero-buttons {
@@ -639,8 +641,30 @@ body {
     font-size: 0.95rem;
   }
 
+  .hero-name {
+    order: 1;
+  }
+
+  .hero-tagline {
+    order: 2;
+  }
+
   .hero-video-frame {
-    display: none;
+    display: flex;
+    justify-content: flex-end;
+    order: 3;
+    padding-right: 20px;
+    margin-bottom: 40px;
+  }
+
+  .hero-buttons {
+    order: 4;
+  }
+
+  .iphone-frame {
+    width: 180px;
+    height: 370px;
+    margin: 20px 0;
   }
 
   .auth-content::before {
@@ -982,6 +1006,7 @@ body {
   .hero-content {
     text-align: center;
     max-width: 100%;
+    display: contents;
   }
 
   .hero-background-text {
@@ -992,17 +1017,23 @@ body {
   }
 
   .hero-name {
+    order: 1;
     font-size: clamp(2rem, 10vw, 3.5rem);
     line-height: 0.85;
     letter-spacing: -0.02em;
   }
 
   .hero-tagline {
+    order: 2;
     font-size: clamp(0.85rem, 2.2vw, 1rem);
-    margin-bottom: 30px;
+  }
+
+  .hero-video-frame {
+    order: 3;
   }
 
   .hero-buttons {
+    order: 4;
     flex-direction: column;
     gap: 12px;
     align-items: center;
@@ -1016,7 +1047,16 @@ body {
   }
 
   .hero-video-frame {
-    display: none;
+    display: flex;
+    justify-content: flex-end;
+    order: 2;
+    padding-right: 15px;
+  }
+
+  .iphone-frame {
+    width: 160px;
+    height: 330px;
+    margin: 15px 0;
   }
 
   .auth-content::before {
