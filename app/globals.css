@@ -729,6 +729,13 @@ body {
   text-align: right;
 }
 
+.cost-text {
+  font-weight: 700;
+  font-size: 0.75em;
+  color: #374151;
+  text-align: center;
+}
+
 .table-legend {
   text-align: center;
   color: #666;
@@ -1723,6 +1730,10 @@ body {
   .score-text {
     font-size: 0.9em;
     min-width: 40px;
+  }
+
+  .cost-text {
+    font-size: 0.9em;
   }
 
   .bonus-section,

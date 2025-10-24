@@ -15,7 +15,8 @@ const ComparisonTable = ({ lang }) => {
       medicine: 7,
       convenience: 9,
       foodQuality: 10,
-      community: 7
+      community: 7,
+      costOfLiving: 1300
     },
     {
       key: 'vietnam',
@@ -25,7 +26,8 @@ const ComparisonTable = ({ lang }) => {
       medicine: 8,
       convenience: 7,
       foodQuality: 8,
-      community: 8
+      community: 8,
+      costOfLiving: 1050
     },
     {
       key: 'bali',
@@ -35,7 +37,8 @@ const ComparisonTable = ({ lang }) => {
       medicine: 5,
       convenience: 3,
       foodQuality: 6,
-      community: 10
+      community: 10,
+      costOfLiving: 1900
     },
     {
       key: 'kualaLumpur',
@@ -45,7 +48,8 @@ const ComparisonTable = ({ lang }) => {
       medicine: 7.5,
       convenience: 8.8,
       foodQuality: 6,
-      community: 5
+      community: 5,
+      costOfLiving: 1500
     }
   ];
 
@@ -54,7 +58,8 @@ const ComparisonTable = ({ lang }) => {
     'medicine',
     'convenience',
     'foodQuality',
-    'community'
+    'community',
+    'costOfLiving'
   ];
 
   const getScoreColor = (score) => {
@@ -104,7 +109,11 @@ const ComparisonTable = ({ lang }) => {
             </div>
             {countries.map((country, countryIndex) => (
               <div key={countryIndex} className="score-cell">
-                {getScoreBar(country[metricKey])}
+                {metricKey === 'costOfLiving' ? (
+                  <span className="cost-text">${country[metricKey].toLocaleString()}</span>
+                ) : (
+                  getScoreBar(country[metricKey])
+                )}
               </div>
             ))}
           </div>

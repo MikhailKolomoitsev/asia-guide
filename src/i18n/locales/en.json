@@ -267,6 +267,10 @@
       "community": {
         "label": "Community & Activities",
         "icon": "👥"
+      },
+      "costOfLiving": {
+        "label": "Cost of Living ($/month)",
+        "icon": "💵"
       }
     }
   }
