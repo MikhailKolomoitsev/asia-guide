@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import './home.css';
 
 export default function HomePage() {
   const [language, setLanguage] = useState < 'en' | 'uk' > ('uk');

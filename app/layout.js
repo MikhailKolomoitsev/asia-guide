@@ -1,4 +1,5 @@
 import './globals.css';
+import './home.css';
 import ScrollHandler from './components/ScrollHandler';
 
 export const metadata = {
