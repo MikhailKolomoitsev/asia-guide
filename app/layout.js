@@ -1,4 +1,5 @@
 import './globals.css';
+import ScrollHandler from './components/ScrollHandler';
 
 export const metadata = {
   title: 'Asia Guide',
@@ -8,7 +9,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html>
-      <body>{children}</body>
+      <body>
+        <ScrollHandler />
+        {children}
+      </body>
     </html>
   );
 }

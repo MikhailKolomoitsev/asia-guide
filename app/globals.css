@@ -1275,6 +1275,86 @@ body {
   }
 }
 
+/* Phone Frame Hide/Show Buttons - Mobile First */
+.phone-frame-hide-btn {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: -40px;
+  background: rgba(220, 38, 38, 0.9);
+  border: none;
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.phone-frame-hide-btn:hover {
+  background: rgba(220, 38, 38, 1);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.4);
+}
+
+.phone-frame-hide-btn:active {
+  transform: scale(0.95);
+}
+
+/* Show button appears when phone frame is manually hidden */
+.phone-frame-show-btn {
+  display: none;
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%) scale(0.8);
+  background: rgba(102, 126, 234, 0.95);
+  border: none;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 24px;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.phone-frame-show-btn.visible {
+  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(-50%) scale(1);
+}
+
+.phone-frame-show-btn:hover {
+  background: rgba(102, 126, 234, 1);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.phone-frame-show-btn:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+/* Hide phone frame when manually hidden or scrolled */
+.hero-video-frame.manually-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* Image Modal Styles - Mobile First */
 .image-modal {
   position: fixed;
@@ -1826,7 +1906,7 @@ body {
 
       .hero-background-image{
         max-width: 800px;
-        left: 40%;
+        left: 30%;
       }
     
       .hero-name {
@@ -1859,14 +1939,28 @@ body {
         order: initial;
         padding-right: 0;
         margin-bottom: 0;
+        transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        opacity: 1;
       }
-    
+
+      /* Hide phone frame when scrolled past hero section */
+      body.scrolled-past-hero .hero-video-frame {
+        opacity: 0;
+        transform: translateX(100%);
+        pointer-events: none;
+      }
+
       .iphone-frame {
         width: 280px;
         height: 580px;
         margin: 0;
       }
-    
+
+      /* Show hide button on desktop when frame is visible */
+      .phone-frame-hide-btn {
+        display: flex;
+      }
+
       .hero-background-text {
         font-size: clamp(100px, 18vw, 280px);
         left: 10%;

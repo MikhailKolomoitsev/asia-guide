@@ -12,11 +12,20 @@ export default function Home({ params }) {
   const { t } = useTranslation(lang);
   const [isRegistered, setIsRegistered] = useState(false);
   const [activeCardIndex, setActiveCardIndex] = useState(-1);
+  const [isPhoneFrameHidden, setIsPhoneFrameHidden] = useState(false);
   const cardsRef = useRef([]);
   const router = useRouter();
 
   const changeLanguage = (newLang) => {
     router.push(`/${newLang}`);
+  };
+
+  const hidePhoneFrame = () => {
+    setIsPhoneFrameHidden(true);
+  };
+
+  const showPhoneFrame = () => {
+    setIsPhoneFrameHidden(false);
   };
 
   useEffect(() => {
@@ -111,7 +120,15 @@ export default function Home({ params }) {
         </div>
         <div className="hero-overlay">
           <div className="hero-content">
-            <div className="hero-video-frame">
+            <div className={`hero-video-frame ${isPhoneFrameHidden ? 'manually-hidden' : ''}`}>
+              <button
+                className="phone-frame-hide-btn"
+                onClick={hidePhoneFrame}
+                aria-label="Hide phone preview"
+                title="Hide phone preview"
+              >
+                ✕
+              </button>
               <div className="iphone-frame">
                 <div className="iphone-notch"></div>
                 <video
@@ -134,6 +151,14 @@ export default function Home({ params }) {
             </div>
           </div>
         </div>
+        <button
+          className={`phone-frame-show-btn ${isPhoneFrameHidden ? 'visible' : ''}`}
+          onClick={showPhoneFrame}
+          aria-label="Show phone preview"
+          title="Show phone preview"
+        >
+          📱
+        </button>
       </div>
 
       {isRegistered ? (
