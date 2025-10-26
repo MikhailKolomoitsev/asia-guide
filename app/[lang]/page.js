@@ -116,7 +116,7 @@ export default function Home({ params }) {
       <div className="hero-section">
         
         <div className="hero-background-image">
-          <img src="/content/home_main.PNG" alt="author" />
+          <img src="/content/home_main3.PNG" alt="author" />
         </div>
         <div className="hero-overlay">
           <div className="hero-content">
@@ -183,25 +183,29 @@ export default function Home({ params }) {
           <h3 className="preview-title">{t('home.preview.title')}</h3>
           <div className="content-cards-grid">
             {[
-              { icon: '💎', key: 'budget' },
-              { icon: '❤️', key: 'crafted' },
-              { icon: '🏠', key: 'accommodation' },
-              { icon: '🗺️', key: 'destinations' },
-              { icon: '🍜', key: 'food' },
-              { icon: '🍽️', key: 'dining' },
-              { icon: '⚠️', key: 'avoid' },
-              { icon: '🧠', key: 'mentality' },
-              { icon: '💰', key: 'money' }
+              { icon: '💎', key: 'budget', image: '/content/2025-09-12 07.27.07.jpg' },
+              { icon: '❤️', key: 'crafted', image: '/content/2025-09-12 07.27.16.jpg' },
+              { icon: '🏠', key: 'accommodation', image: '/content/2025-09-12 07.27.27.jpg' },
+              { icon: '🗺️', key: 'destinations', image: '/content/2025-09-12 07.27.31.jpg' },
+              { icon: '🍜', key: 'food', image: '/content/2025-09-12 07.27.45.jpg' },
+              { icon: '🍽️', key: 'dining', image: '/content/2025-09-12 07.28.48.jpg' },
+              { icon: '⚠️', key: 'avoid', image: '/content/2025-09-12 07.29.09.jpg' },
+              { icon: '🧠', key: 'mentality', image: '/content/2025-09-12 07.29.17.jpg' },
+              { icon: '💰', key: 'money', image: '/content/2025-09-12 07.29.30.jpg' }
             ].map((card, index) => (
-              <div
-                key={index}
-                className={`content-card ${activeCardIndex === index ? 'scroll-active' : ''}`}
-                tabIndex="0"
-                ref={el => cardsRef.current[index] = el}
-              >
-                <div className="content-card-icon">{card.icon}</div>
-                <h4 className="content-card-title">{t(`home.preview.cards.${card.key}.title`)}</h4>
-                <p className="content-card-description">{t(`home.preview.cards.${card.key}.description`)}</p>
+              <div key={index} className="content-card-row">
+                <div
+                  className={`content-card ${activeCardIndex === index ? 'scroll-active' : ''}`}
+                  tabIndex="0"
+                  ref={el => cardsRef.current[index] = el}
+                >
+                  <div className="content-card-icon">{card.icon}</div>
+                  <h4 className="content-card-title">{t(`home.preview.cards.${card.key}.title`)}</h4>
+                  <p className="content-card-description">{t(`home.preview.cards.${card.key}.description`)}</p>
+                </div>
+                <div className="content-card-image">
+                  <img src={`/content/home-items/${card.key}.PNG`} alt={t(`home.preview.cards.${card.key}.title`)} />
+                </div>
               </div>
             ))}
           </div>
